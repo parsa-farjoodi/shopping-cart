@@ -1,0 +1,123 @@
+.carouserSlider{
+    position: relative;
+}
+.explaination{
+    background-color: rgba(255, 255, 255, .7);
+    position: absolute;
+    z-index: 999;
+    top: 110px;
+    left: 70px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .explaination img{
+    width: 70px;
+    height: 10px;
+    object-fit: cover;
+} */
+.explaination h3{
+    color: black;
+    font-size: 35px;
+    font-weight: 400;
+}
+.explaination h1{
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: black;
+    
+}
+.moreAbout{
+    width: 170px;
+    height: 50px;
+    background-color: transparent;
+    color: rgba(0, 167, 0,.8);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 167, 0, .8);
+}
+.moreAbout:hover{
+    border: none;
+    color: rgb(22, 22, 22);
+    background-color: white;
+}
+.makeAppoint{
+    width: 210px;
+    height: 50px;
+    background-color: rgba(19, 192, 19);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.makeAppoint:hover{
+    background-color: transparent;
+    color: rgb(22, 22, 22);
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.emergency{
+    width: 230px;
+    height: 50px;
+    background-color: rgba(19, 192, 19);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-right: 30px;
+}
+.emegency:hover{
+    background-color: transparent;
+    color: rgb(22, 22, 22);
+}
+.detail{
+    color: black;
+}
+
+
+/* //////////// media-query */
+@media (max-width: 768px) {
+    .explaination{
+        left: 20px;
+        top: 30px;
+    }
+    .explaination{
+        height: 100%;
+        top: 0;
+    }
+    .explaination h3{
+        font-size: 20px;
+    }
+    .explaination h1{
+        font-size: 1.5rem;
+    }
+    .moreAbout, .makeAppoint, .emegency{
+        width: 100%;
+    }
+    .moreAbout{
+        margin-top: 10px;
+    }
+    .buttons{
+        display: block;
+    }
+    .detail{
+        font-size: 11px;
+    }
+}

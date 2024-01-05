@@ -1,0 +1,101 @@
+.projectContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.projectTitle h2{
+    font-weight: 400;
+}
+.projectMenu ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 18px;
+    width: 100%;
+    list-style: none;
+}
+.projectMenu ul li{
+    margin: 0 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.active{
+    color: rgb(11, 170, 11)!important;
+}
+.projectMenu ul li:hover{
+    color: rgb(11, 170, 11);;
+}
+.projectPhotos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.photo{
+    width: 331px;
+    height: 351px;
+    position: relative;
+}
+.photo img{
+    width: 331px;
+    height: 351px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+    z-index: 999;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 35px;
+    transition: all .2s linear;
+    cursor: pointer;
+    opacity: 0;
+}
+.overlay p{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.overlay button{
+    width: 140px;
+    align-self: center;
+    margin-top: 25px;
+    height: 44px;
+    border: none;
+    font-size: 13px;
+    background-color: rgb(7, 170, 7);
+    color: white;
+    font-weight: 500;
+}
+.photo:hover .overlay{
+    opacity: 1;
+}
+
+
+
+
+
+/* //////media-query/////// */
+@media(max-width: 768px) {
+    .projectMenu ul li{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .photo{
+        width: 100%;
+    }
+    .photo img{
+        width: 100%;
+    }
+}

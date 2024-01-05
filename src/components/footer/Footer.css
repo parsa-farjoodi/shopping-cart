@@ -1,0 +1,232 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px;
+}
+
+.aboutContainer {
+    width: 25%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px 10px;
+}
+
+.about h3 {
+    font-size: 20px;
+    color: rgb(95, 94, 94);
+}
+
+.about p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(151, 150, 150);
+}
+
+.servicesContainer {
+    width: 25%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+.services h3 {
+    font-size: 20px;
+    color: rgb(95, 94, 94);
+}
+
+.services ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.services ul li {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(151, 150, 150);
+    margin: 10px 0;
+}
+.services ul li:hover{
+    color: rgb(4, 173, 4);
+}
+.services ul li:hover .checkIcon{
+    color: black!important;
+}
+
+.services .checkIcon {
+    color: rgb(4, 173, 4) !important;
+}
+
+.recentPostContainer {
+    width: 25%;
+}
+
+.recentPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.recentPost .post {
+    margin: 5px 0;
+}
+
+.recentPost .title h3 {
+    font-size: 20px;
+    color: rgb(95, 94, 94);
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.postImage {
+    width: 60px;
+    height: 60px;
+}
+
+.postImage img {
+    width: 60px;
+    height: 60px;
+}
+
+.recentPostDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.recentPostDetail .date span{
+    font-size: 12px;
+}
+
+.recentPostDetail .title {
+    margin-left: 5px;
+}
+
+.recentPostDetail .title a {
+    text-decoration: none;
+    color: rgb(87, 86, 86);
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all .2s linear;
+}
+.recentPostDetail .title a:hover{
+    color: rgb(4, 173, 4);
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px;
+}
+.folloeUsContainer {
+    width: 25%;
+}
+
+.followUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.followUs .title h3 {
+    font-size: 20px;
+    color: rgb(95, 94, 94);
+}
+
+.resumes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: -44px;
+}
+
+.resumes .photo {
+    width: 50px;
+    height: 0px;
+    margin: 55px 3px;
+}
+.resumes .photo img {
+    width: 50px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.followUs {
+    margin: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* //////media-query/////// */
+@media (max-width: 768px) {
+    .aboutContainer {
+        width: 100%;
+    }
+    .servicesContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .recentPostContainer {
+        width: 100%;
+    }
+    .folloeUsContainer {
+        width: 100%;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .services{
+        margin: -5px;
+    }
+    .post{
+        margin-left: -60px!important;
+    }
+    .postImage {
+        width: 1000px;
+        height: 80px;
+    }
+    
+    .postImage img {
+        width: 100px;
+        height: 80px;
+    }
+    .recentPostDetail .title a{
+        font-size: 19px;
+    }
+    .resumes {
+        display: block;
+    }
+    .resumes .photo{
+        width:450px;
+        height: 500px;
+        margin-top: 40px;
+    }
+    .photo img{
+        width:450px!important;
+        height: 500px!important;
+    }
+    .followUs{
+        margin-left: -10px;
+    }
+}

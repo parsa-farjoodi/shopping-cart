@@ -1,0 +1,89 @@
+.aboutUs{
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.sections{
+    display: block;
+}
+.choises{
+    width: 60%;
+}
+.aboutUsDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-left: 60px;
+    width: 50%;
+}
+.choise{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 35px 50px;
+}
+.check{
+    background-color: rgb(8, 182, 8);
+    width: 95px;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+.check:hover{
+    transform: scale(1.3);
+}
+.choiseDetails{
+    display: flex;
+    flex-direction: column;
+    margin: -8px 14px;
+}
+.aboutUsDetailsParagraf p{
+    font-size: 17px;
+    color: rgb(24, 23, 23);
+}
+.aboutUsDetailsTitle h2{
+    font-weight: 400;
+}
+.choiseParagraf{
+    margin: 8px 0;
+}
+.choiseParagraf p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(112, 111, 111);
+}
+.choiseTitle h3{
+    font-size: 23px;
+    font-weight: 400;
+}
+.choiseIcon{
+    color: white;
+    font-size: 30px!important;
+    font-weight: 700!important;
+}
+
+
+
+/* /////media-query/////// */
+@media (max-width: 768px) {
+    .aboutUs{
+        height: 750px;
+    }
+    .aboutUsDetailsParagraf p {
+        font-size: 14px;
+    }
+    .choiseParagraf p{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .choiseTitle h3{
+        font-size: 18px;
+    }
+}

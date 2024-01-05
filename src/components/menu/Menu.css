@@ -1,0 +1,128 @@
+.nav {
+    background-color: rgb(9, 197, 9);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.call,
+.location {
+    color: white;
+    font-size: 12px !important;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+.call a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.call a:hover {
+    color: rgb(94, 94, 94);
+}
+
+.mailIcon,
+.locationIcon {
+    font-size: 20px !important;
+    margin-right: 6px;
+}
+
+.callAndLocation {
+    display: flex;
+    margin-left: 13px;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebookIcon,
+.twitterIcon,
+.youtubeIcon,
+.instagramIcon {
+    color: white;
+    margin: 0 14px;
+    font-size: 19px !important;
+    cursor: pointer;
+}
+
+.facebookIcon:hover {
+    color: rgb(41, 41, 41);
+}
+
+.twitterIcon:hover {
+    color: rgb(41, 41, 41);
+}
+
+.youtubeIcon:hover {
+    color: rgb(41, 41, 41);
+}
+
+.instagramIcon:hover {
+    color: rgb(41, 41, 41);
+}
+
+.logo {
+    margin: 25px 15px;
+}
+
+.spanLogo {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+    margin-left: 12px;
+}
+
+.mainMenu {
+    margin-top: 30px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu li {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.menu li:hover {
+    color: rgb(19, 192, 19);
+}
+
+.active {
+    color: rgb(19, 192, 19);
+}
+
+.menuIcon {
+    display: none;
+    cursor: pointer;
+} 
+
+
+/* ////////////////////////////media-query */
+ @media(max-width: 768px) {
+    .nav {
+        height: 50px;
+    }
+    .logo {
+        text-align: center;
+    }
+    .mainMenu{
+        margin-top: 0px;
+    }
+    .menu li{
+        font-size: 11px;
+    }
+    .socialMedia{
+        margin-top: 8px 0;
+    }
+} 
